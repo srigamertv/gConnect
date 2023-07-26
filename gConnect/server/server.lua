@@ -56,37 +56,64 @@ function UpdateStatusMessage()
 	if Config.Debug then
 		print('Atualizando mensagem de status ['..footer..']')
 	end
+	local fivem = "`🎮          `" -- Emoji que será exibido como o botão (altere conforme desejado)
+    local emoji = "`     🛒     `" -- Emoji que será exibido como o botão (altere conforme desejado)
+	local tiktok = "`          🔈`" -- Emoji que será exibido como o botão (altere conforme desejado)
 
-	local message = json.encode({
-		embeds = {
-			{
-			["title"] = '**'..Config.ServerName..'**\n',
-			["color"] = Config.EmbedColor,
-			["thumbnail"] = {
-				["url"] = Config.WebhookIcon,
-			},
-			["footer"] = {
-				["text"] = footer ,
-			},
-				["fields"]= {
+    local message = json.encode({
+        embeds = {
+            {
+                ["title"] = '**'..Config.ServerName..'**\n',
+                ["color"] = Config.EmbedColor,
+                ["thumbnail"] = {
+                    ["url"] = Config.WebhookIcon,
+                },
+                ["footer"] = {
+                    ["text"] = footer ,
+                },
+                ["fields"]= {
+                    {
+                        ["name"]= "> 🕹️  Players",
+                        ["value"]= '```\n ['..players..' / '..maxplayers..'] ```',
+                        ["inline"]= true
+                    },
+                    {
+                        ["name"]= "> 📡  Status",
+                        ["value"]= '```\n [ONLINE]```',
+                        ["inline"]= true
+                    },
+                    {
+                        ["name"]= "> Connect FiveM",
+                        ["value"]= '```connect '..connect..'```',
+                    },
 					{
-				      ["name"]= "> 🕹️  Players",
-				      ["value"]= '```\n ['..players..' / '..maxplayers..'] ```',
-				      ["inline"]= true
-				    },
-				    {
-				      ["name"]= "> 📡  Status",
-				      ["value"]= '```\n [ONLINE]```',
-				      ["inline"]= true
-				    },
-				    {
-				      ["name"]= "> Connect FiveM",
-				      ["value"]= '```connect '..connect..'```'
-				    },
-				},
-			}
-		}
-	})
+						["name"] = "\n",
+						["value"] = "\n",
+					},
+					{
+						["name"] = "\n",
+						["value"] = "\n",
+					},
+                    {
+                        ["name"]= "> 🎮 Connect",
+                        ["value"]= ' \n ['..fivem..'](https://github.com/srigamertv/gConnect)', -- Emoji clicável que abre o link
+                        ["inline"]= true
+                    },
+                    {
+                        ["name"]= "> 🛒 Loja",
+                        ["value"]= '\n ['..emoji..'](https://github.com/srigamertv/gConnect)',
+                        ["inline"]= true
+                    },
+                    {
+                        ["name"]= "> 🔈 Tiktok",
+                        ["value"]= '\n ['..tiktok..'](https://github.com/srigamertv/gConnect)',
+                        ["inline"]= true
+                    },
+                },
+            }
+        }
+    })
+
 
 	PerformHttpRequest(Config.Webhook..'/messages/'..Config.MessageId, function(err, text, headers) 
 		if Config.Debug then
