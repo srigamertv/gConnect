@@ -1,5 +1,4 @@
 # gConnect
 script simples bem parecido com bot que varias cidade usam
 
-video/preview: 
-[Assista ao vídeo de preview]([videos/nome-do-video](https://www.youtube.com/watch?v=RPYPia3zILk)https://www.youtube.com/watch?v=RPYPia3zILk.mp4)
+video/preview:  <iframe width="560" height="315" src="https://www.youtube.com/embed/RPYPia3zILk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
