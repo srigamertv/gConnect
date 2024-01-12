@@ -1,5 +1,5 @@
 # gConnect
-Script simples bem parecido com bot que várias cidades usam
+- Script simples bem parecido com bot que várias cidades usam
 
 **Video Preview:**
 
