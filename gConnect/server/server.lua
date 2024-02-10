@@ -87,7 +87,7 @@ function UpdateStatusMessage()
 
     if Config.showConnectField then
         table.insert(fields, {
-            ["name"]= "> 🎮 Connect",
+            ["name"]= "> 🎮 Connect", -- IDEIA DE COMO COLOCAR EMOJI PERSONALIZADO "<:fivem:1030268290741837854>"
             ["value"]= ' \n ['..fivem..']('..Config.connectlink..')', -- Emoji clicável que abre o link
             ["inline"]= true
         })

@@ -13,7 +13,7 @@ Config.Connect = 'SR.IGAMER TV' -- connect da cidade
 
 Config.showConnectField = true -- se for true aparece o link de connect / se for false não irá aparecer  
 Config.emojifivem = "`🎮          `"
-Config.connectlink = 'https://github.com/srigamertv/gConnect'
+Config.connectlink = 'https://cfx.re/join/SEUID'--seu id no lugar do 8bd793 (LEMBRANDO QUE PARA IR COM ESSE LINK PRECISA TER KEY PAGA) CASO NÀO TENHA USA O CONNECT 
 
 Config.showStoreField = true -- se for true aparece o link da loja / se for false não irá aparecer
 Config.emojiloja = "`     🛒     `"
