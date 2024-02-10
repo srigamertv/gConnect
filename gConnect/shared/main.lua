@@ -2,10 +2,10 @@ Config = {}
 
 Config.Debug = false -- mandar mensagem para CMD? true = SIM
 
-Config.Webhook = 'https://discord.com/api/webhooks/1185262636212961461/NcK9HIb8ZTF0Vtd0I5IBRfDd20U0L1ys6g68RY07x90OTJsdDF7jkfW97qR14lhL37Rs' -- copie e cole sua webhook
+Config.Webhook = '' -- copie e cole sua webhook
 Config.ServerName = 'CANAL SR.IGAMER TV ' -- Titulo da Msg
 
-Config.MessageId = '1205645450871312425' -- inicie o resource sem ID, após iniciar, copie o id da mensagem e cole aqui.
+Config.MessageId = '' -- inicie o resource sem ID, após iniciar, copie o id da mensagem e cole aqui.
 
 Config.UpdateTime = 1 -- tempo para atualizar (em minutos)
 Config.Use24hClock = true -- true= 24h / false= 12h (am/pm)
